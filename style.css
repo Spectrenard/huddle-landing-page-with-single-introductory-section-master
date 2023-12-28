@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  background: url(./images/bg-desktop.svg) center/cover no-repeat;
+  background-color: hsl(257, 40%, 49%);
+}
+
+.full-part {
+  padding: 50px 80px;
+  max-width: 2400px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding-bottom: 50px;
+}
+
+.logo {
+  max-width: 260px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+}
+
+.left-part {
+  width: 900px;
+  max-width: 1000px;
+}
+.left-part img {
+  width: 100%;
+}
+
+.right-part {
+  width: 600px;
+  max-width: 640px;
+  padding: 50px 0;
+  padding-left: 50px;
+}
+.right-part h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 3rem;
+}
+
+.right-part p {
+  font-family: "Open sans";
+  font-weight: 400;
+  color: white;
+  line-height: 30px;
+  padding: 25px 0;
+}
+
+.btn {
+  width: 35%;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.471);
+  transition: 0.4s;
+}
+
+.btn:hover {
+  transform: scale(0.9);
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+}
+
+.network {
+  padding: 10px 0;
+}
+
+.network ul {
+  display: flex;
+  justify-content: flex-end; /* Ajuste le sens de l'alignement à la fin (flex-end) */
+}
+
+.network li {
+  margin: 0 10px;
+  display: flex; /* Ajoute cette ligne pour permettre l'alignement des éléments enfants */
+  align-items: center;
+  justify-content: center; /* Centre les éléments horizontalement et verticalement */
+  padding: 0 15px;
+  color: white;
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.network i {
+  font-size: 1.1rem;
+  color: white;
+  transition: 0.3s;
+}
+
+.network li:hover {
+  color: hsl(300, 69%, 71%);
+  border: 1px solid hsl(300, 69%, 71%);
+}
+
+.network li:hover i {
+  color: hsl(300, 69%, 71%);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 700px) {
+  .full-part {
+    padding: 25px 40px;
+    margin: 0 auto;
+  }
+  .nav {
+    padding-bottom: 70px;
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+  .main {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: block;
+  }
+  .left-part {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .right-part {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0;
+  }
+  .right-part h1 {
+    font-size: 1.5rem;
+  }
+  .btn {
+    width: 70%;
+    padding: 15px 0;
+  }
+  .network ul {
+    justify-content: center;
+  }
+  .network li {
+    margin: 0 5px;
+    height: 35px;
+    width: 35px;
+  }
+  .network i {
+    font-size: 0.9rem;
+  }
+}
