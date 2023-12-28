@@ -9,7 +9,7 @@
 
 body {
   height: 100vh;
-  background: url(./bg-desktop.svg) center/cover no-repeat;
+  background: url(bg-desktop.svg) center/cover no-repeat;
   background-color: hsl(257, 40%, 49%);
 }
 
